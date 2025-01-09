@@ -3,12 +3,17 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link href="https://cdn.jsdelivr.net/npm/locomotive-scroll@latest/dist/locomotive-scroll.min.css" rel="stylesheet">
 
-<link rel="stylesheet" href="https://unpkg.com/sheryjs/dist/Shery.css"/> 
 
-<!-- Remix Icon CDN -->
-<link href="https://cdn.jsdelivr.net/npm/remixicon/fonts/remixicon.css" rel="stylesheet"/>
+  <link href="
+  https://cdn.jsdelivr.net/npm/locomotive-scroll@4.1.4/dist/locomotive-scroll.min.css
+  " rel="stylesheet">
+  
+  <link rel="stylesheet" href="https://unpkg.com/sheryjs/dist/Shery.css" />  <!-- Shery Js -->
+  <!-- remix icon cdn -->
+  <link
+  href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css"
+  rel="stylesheet"/>
 
 
   <link href="./assets/css/output.css" rel="stylesheet">
@@ -16,32 +21,41 @@
 </head>
 <body>
 
+   <!--Preloader start-->
+  <!-- <div id="preloader" class="fixed inset-0  flex justify-center items-center z-50 ">
+    <div class="matrix ">
+    </div>
+  </div> -->
+  <!-- Preloader end --> 
+  
   <!-- curser  -->
   <div id="crsr"></div> 
 
   <!-- loader  -->
-  <div id="loader">   
+  <div id="loader" class="2xl:px-48 xl:px-44 px-6 py-20 lg:py-48">   
     <div class="line">
         <div id="line1-part1">
-            <h5 class="text-5xl">00</h5>
-            <h6 class="text-5xl font-thin">- 100</h6>
+            <h5 class="lg:text-5xl text-2xl">00</h5>
+            <h6 class="lg:text-5xl text-2xl font-thin">- 100</h6>
         </div>  
-        <h1 class="text-[80px] font-black uppercase">Your</h1>
+        <h1 class="lg:text-[80px] md:text-6xl text-3xl font-black uppercase">Your</h1>
     </div>
     <div class="line">
-        <h1 class="text-[80px] font-black uppercase">Web experiences</h1>
+        <h1 class="lg:text-[80px] md:text-6xl  text-3xl font-black uppercase">Web experiences</h1>
     </div>
     <div class="line">
-        <h1 class="text-[80px] font-black uppercase"> is Loading right </h1>
-        <h2 class="text-8xl font-black uppercase">Now</h2>
+        <h1 class="lg:text-[80px] md:text-6xl  text-3xl font-black uppercase "> is Loading right </h1>
+        <h2 class="xl:text-[75px] md:text-4xl text-2xl font-black uppercase">Now</h2>
     </div>
 </div>
 
+<main>
 <!-- main  -->
 <div id="main" class="bg-[#151515] relative">
 
          <!-- navbar  -->
          <div id="page1" class="relative w-full h-[100vh] z-[100]" data-scroll >
+            
           <div id="nav" class="flex items-center justify-between">
               <svg class="brand__svg" width="71" height="27" viewBox="0 0 71 27">
                   <path d="M40.7622 24.5917C40.7622 23.6724 41.4511 22.9829 42.3697 22.9829C43.2883 22.9829 43.9773 23.6724 43.9773 24.5917C43.9773 25.511 43.2883 26.2005 42.3697 26.2005C41.566 26.2005 40.7622 25.3961 40.7622 24.5917Z" fill="currentColor"></path>
@@ -54,33 +68,34 @@
                   <path d="M34.6764 14.0195C34.6764 10.4572 31.691 7.58432 27.9019 7.35449C30.1983 7.69923 30.8873 11.4914 30.8873 14.0195C30.8873 16.5476 30.1983 20.2249 27.9019 20.6845C31.8058 20.4547 34.6764 17.5819 34.6764 14.0195Z" fill="currentColor"></path>
                   <path d="M14.9269 14.0195C14.9269 10.4572 11.9415 7.58432 8.15234 7.35449C10.4488 7.69923 11.1377 11.4914 11.1377 14.0195C11.1377 16.5476 10.4488 20.2249 8.15234 20.6845C11.9415 20.4547 14.9269 17.5819 14.9269 14.0195Z" fill="currentColor"></path>
                   <path d="M0 14.0195C0 10.4572 2.9854 7.58432 6.77456 7.35449C4.4781 7.69923 3.78916 11.4914 3.78916 14.0195C3.78916 16.5476 4.4781 20.2249 6.77456 20.6845C2.9854 20.4547 0 17.5819 0 14.0195Z" fill="currentColor"></path></svg>
-              <div id="nav-part2">
+              <div id="nav-part2" class="flex justify-center items-center gap-[3vw]">
                   <h4 class="text-xl font-black"> Works</h4>
                   <h4 class="text-xl font-black"> About</h4>
                   <h4 class="text-xl font-black"> Contacts</h4>
               </div>    
           </div>
-          <div class="hero w-[70%] ml-[27%] flex items-center z-[999] overflow-hidden " id="hero1">
-              <h1 class="relative text-8xl leading-[90px] uppercase font-semibold">We Design</h1>
+
+          <div class="hero md:w-[70%] w-full md:ml-[27%] mx-5  flex items-center z-[999] overflow-hidden " id="hero1">
+              <h1 class="relative xl:text-8xl lg:text-7xl text-5xl leading-[90px] uppercase font-semibold text-center lg:text-start">We Design</h1>
           </div>
-          <div class="hero w-[70%] ml-[27%] flex items-center z-[999] overflow-hidden" id="hero2">
-              <h1 class="relative text-8xl leading-[90px] uppercase font-semibold">Unique</h1>
+          <div class="hero md:w-[70%] w-full md:ml-[27%] mx-5  flex items-center z-[999] overflow-hidden" id="hero2">
+              <h1 class="relative xl:text-8xl lg:text-7xl text-5xl leading-[90px] uppercase font-semibold text-center lg:text-start">Unique</h1>
           </div>
-          <div  class="hero w-[70%] ml-[27%] flex items-center z-[999] overflow-hidden" id="hero3">
+          <div  class="hero md:w-[70%] w-full md:ml-[27%] mx-5  flex items-center z-[999] overflow-hidden" id="hero3">
               
-              <h2 class="relative text-8xl leading-[90px] uppercase font-semibold">Web/</h2>
-              <h2 class="relative text-8xl leading-[90px] uppercase font-semibold">Graphic</h2>
+              <h2 class="relative xl:text-8xl lg:text-7xl text-5xl leading-[90px] uppercase font-semibold text-center lg:text-start">Web/</h2>
+              <h2 class="relative xl:text-8xl lg:text-7xl text-5xl leading-[90px] uppercase font-semibold text-center lg:text-start">Graphic</h2>
               
           </div>
-          <div class="hero w-[70%] ml-[27%] flex items-center z-[999] overflow-hidden" id="hero4">
-              <h1 class="relative text-8xl leading-[90px] uppercase font-semibold">Experience</h1>
+          <div class="hero md:w-[70%] w-full md:ml-[27%] mx-5  flex items-center z-[999] overflow-hidden" id="hero4">
+              <h1 class="relative xl:text-8xl lg:text-7xl text-5xl leading-[90px] uppercase font-semibold text-center items-center lg:text-start">Experience</h1>
           </div>
           <img id="flag" src="https://obys.agency/wp-content/uploads/2022/03/Flag.jpg" alt="">
       </div>
 
       <!-- videi section  -->
       <div id="page2" class="relative w-full" data-scroll data-scroll-speed="-1">
-        <div id="video-container">
+        <div id="video-container" class="relative md:left-[28%] w-full md:[1363px]">
             <div id="video-cursor">
                 <i class="ri-play-mini-fill"></i>
             </div>
@@ -89,27 +104,67 @@
         </div>
     </div>
 
+
+
     <!-- project section  -->
 
     <div id="page3" class="relative w-full mb-24" data-scroll data-scroll-speed="-1">
-        <h1 id="works" class="relative text-8xl ml-96 uppercase mb-10">OUR PROJECTS</h1>
-        <div class="underline h-[1px] w-full bg-white ml-96"></div>
-        <div id="image-div-container" class="relative flex p-5"> 
-            <div class="image-div relative overflow-hidden m-5">
+        <h1 id="works" class="relative xl:text-8xl lg:text-6xl text-5xl lg:ml-96 uppercase mb-10">OUR PROJECTS</h1>
+        <div class="underline h-[1px] w-full bg-white lg:ml-96"></div>
+        
+        <div id="image-div-container" class="relative flex xl:p-5"> 
+
+            <!-- first row  -->
+            <div>
+                <h1 class="button text-4xl px-5">
+                   <span class="label-up"> OLGA PRUDKA</span>
+                   <span class="label-up"> OLGA PRUDKA</span>
+                </h1>
+            <div class="image-div relative overflow-hidden m-5 w-[22vw] h-[24vw]">
                 <img src="../build/assets/img/img1-1.jpg" alt="">
                 <img src="../build/assets/img/img1-2.jpg" alt="">
             </div>
-            <div class="image-div relative overflow-hidden m-5">
+            <div class="flex justify-between px-5 py-4">
+            <h1 class="text-xl">
+                logo Design, Website Design, <br>
+                Development
+            </h1>
+            <p class="text-xl">2023</p>
+        </div>
+        <hr class="h-[1px] bg-white mx-5">
+        </div>
+
+        <div>
+            <h1 class="button text-4xl px-5">
+                <span class="label-up"> ATM</span>
+                <span class="label-up"> ATM</span>
+             </h1>
+            <div class="image-div relative overflow-hidden m-5 w-[27vw] h-[38vw]">
                 <img src="../build/assets/img/img2-1.jpg" alt="">
                 <img src="../build/assets/img/img2-2.jpg" alt="">
             </div>
-            <div class="page3-circle1">
+            <div class="flex justify-between px-5 py-4">
+                <h1 class="text-xl">
+                    logo Design, Website Design, <br>
+                    Development
+                </h1>
+                <p class="text-xl">2024</p>
+            </div>
+            <hr class="h-[1px] bg-white mx-5">
+        </div>
+
+        <div class="hidden lg:block">
+            <div class="page3-circle1 lg:ml-32">
                 <svg class="button__arrow" viewBox="0 0 91 118" fill="none">
                     <path d="M15.2307 57.4152L15.9378 56.708L15.2307 56.0009L14.5236 56.708L15.2307 57.4152ZM34.9813 77.1658L34.2742 77.8729L35.9813 79.58L35.9813 77.1658L34.9813 77.1658ZM0.151478 72.4944L-0.555622 71.7873L-1.26273 72.4944L-0.555622 73.2015L0.151478 72.4944ZM45.29 117.633L44.5828 118.34L45.29 119.047L45.9971 118.34L45.29 117.633ZM60.3692 102.554L61.0763 103.261L61.7839 102.553L61.0758 101.846L60.3692 102.554ZM60.3685 102.553L59.6614 101.846L58.9538 102.553L59.6619 103.261L60.3685 102.553ZM90.427 72.4944L91.1341 73.2015L91.8412 72.4944L91.1341 71.7873L90.427 72.4944ZM75.3478 57.4152L76.0549 56.7081L75.3478 56.001L74.6407 56.7081L75.3478 57.4152ZM56.3065 76.4565L55.3065 76.4565L55.3065 78.8707L57.0136 77.1636L56.3065 76.4565ZM56.3065 0.120074L57.3065 0.120074L57.3065 -0.879926L56.3065 -0.879926L56.3065 0.120074ZM34.9813 0.120076L34.9813 -0.879924L33.9813 -0.879924L33.9813 0.120076L34.9813 0.120076ZM14.5236 58.1223L34.2742 77.8729L35.6884 76.4587L15.9378 56.708L14.5236 58.1223ZM0.858585 73.2015L15.9378 58.1223L14.5236 56.708L-0.555622 71.7873L0.858585 73.2015ZM45.9971 116.926L0.858585 71.7873L-0.555622 73.2015L44.5828 118.34L45.9971 116.926ZM59.662 101.846L44.5828 116.926L45.9971 118.34L61.0763 103.261L59.662 101.846ZM59.6619 103.261L59.6625 103.261L61.0758 101.846L61.0751 101.845L59.6619 103.261ZM61.0756 103.26L91.1341 73.2015L89.7199 71.7873L59.6614 101.846L61.0756 103.26ZM91.1341 71.7873L76.0549 56.7081L74.6407 58.1223L89.7199 73.2015L91.1341 71.7873ZM74.6407 56.7081L55.5994 75.7494L57.0136 77.1636L76.0549 58.1223L74.6407 56.7081ZM57.3065 76.4565L57.3065 0.120074L55.3065 0.120074L55.3065 76.4565L57.3065 76.4565ZM56.3065 -0.879926L34.9813 -0.879924L34.9813 1.12008L56.3065 1.12007L56.3065 -0.879926ZM33.9813 0.120076L33.9813 77.1658L35.9813 77.1658L35.9813 0.120076L33.9813 0.120076Z" fill="currentColor"></path></svg>
                 <div class="circle-in">
                     <p class="text-black text-base font-bold">We are thrilled to have you on board. We hope you enjoyed the projects ❤️</p>
                 </div>    
             </div>
+        </div>
+
+            <!-- second row  -->
+            <div class="hidden lg:block">
             <div class="page3-circle2">
                 <svg class="button__arrow" viewBox="0 0 91 118" fill="none">
                     <path d="M15.2307 57.4152L15.9378 56.708L15.2307 56.0009L14.5236 56.708L15.2307 57.4152ZM34.9813 77.1658L34.2742 77.8729L35.9813 79.58L35.9813 77.1658L34.9813 77.1658ZM0.151478 72.4944L-0.555622 71.7873L-1.26273 72.4944L-0.555622 73.2015L0.151478 72.4944ZM45.29 117.633L44.5828 118.34L45.29 119.047L45.9971 118.34L45.29 117.633ZM60.3692 102.554L61.0763 103.261L61.7839 102.553L61.0758 101.846L60.3692 102.554ZM60.3685 102.553L59.6614 101.846L58.9538 102.553L59.6619 103.261L60.3685 102.553ZM90.427 72.4944L91.1341 73.2015L91.8412 72.4944L91.1341 71.7873L90.427 72.4944ZM75.3478 57.4152L76.0549 56.7081L75.3478 56.001L74.6407 56.7081L75.3478 57.4152ZM56.3065 76.4565L55.3065 76.4565L55.3065 78.8707L57.0136 77.1636L56.3065 76.4565ZM56.3065 0.120074L57.3065 0.120074L57.3065 -0.879926L56.3065 -0.879926L56.3065 0.120074ZM34.9813 0.120076L34.9813 -0.879924L33.9813 -0.879924L33.9813 0.120076L34.9813 0.120076ZM14.5236 58.1223L34.2742 77.8729L35.6884 76.4587L15.9378 56.708L14.5236 58.1223ZM0.858585 73.2015L15.9378 58.1223L14.5236 56.708L-0.555622 71.7873L0.858585 73.2015ZM45.9971 116.926L0.858585 71.7873L-0.555622 73.2015L44.5828 118.34L45.9971 116.926ZM59.662 101.846L44.5828 116.926L45.9971 118.34L61.0763 103.261L59.662 101.846ZM59.6619 103.261L59.6625 103.261L61.0758 101.846L61.0751 101.845L59.6619 103.261ZM61.0756 103.26L91.1341 73.2015L89.7199 71.7873L59.6614 101.846L61.0756 103.26ZM91.1341 71.7873L76.0549 56.7081L74.6407 58.1223L89.7199 73.2015L91.1341 71.7873ZM74.6407 56.7081L55.5994 75.7494L57.0136 77.1636L76.0549 58.1223L74.6407 56.7081ZM57.3065 76.4565L57.3065 0.120074L55.3065 0.120074L55.3065 76.4565L57.3065 76.4565ZM56.3065 -0.879926L34.9813 -0.879924L34.9813 1.12008L56.3065 1.12007L56.3065 -0.879926ZM33.9813 0.120076L33.9813 77.1658L35.9813 77.1658L35.9813 0.120076L33.9813 0.120076Z" fill="currentColor"></path></svg>
@@ -117,34 +172,120 @@
                         <p class="text-black text-base font-bold text-center">It will make you wow! 😱</p>
                     </div> 
             </div>
-            <div class="image-div relative overflow-hidden m-5">
+        </div>
+
+            <div class="pt-20">
+                <h1 class="button text-4xl px-5">
+                    <span class="label-up"> PORCHAE  TAYCAN</span>
+                    <span class="label-up"> PORCHAE  TAYCAN</span>
+                 </h1>
+            <div class="image-div relative overflow-hidden m-5 w-[27vw] h-[38vw]">
                 <img src="../build/assets/img/img3-1.jpg" alt="">
                 <img src="../build/assets/img/img3-2.jpg" alt="">
             </div>
-            <div class="image-div relative overflow-hidden m-5">
+            <div class="flex justify-between px-5 py-4">
+                <h1 class="text-xl">
+                    Website Design,  <br class="hidden md:block">
+                    Development
+                </h1>
+                <p class="text-xl">2023</p>
+            </div>
+            <hr class="h-[1px] bg-white mx-5">
+            </div>
+
+            <div>
+                <h1 class="button text-4xl px-5">
+                    <span class="label-up"> DAVID LAXER</span>
+                    <span class="label-up"> DAVID LAXER</span>
+                 </h1>
+            <div class="image-div relative overflow-hidden m-5 w-[27vw] h-[38vw]">
                 <img src="../build/assets/img/img4-1.jpg" alt="">
                 <img src="../build/assets/img/img4-2.jpg" alt="">
             </div>
-            <div class="page3-circle3">
+            <div class="flex justify-between px-5 py-4">
+                <h1 class="text-xl">
+                   Website Design, <br class="hidden md:block">
+                    Development
+                </h1>
+                <p class="text-xl">2023</p>
+            </div>
+            <hr class="h-[1px] bg-white mx-5">
+            </div>
+
+           <!-- thired row  -->
+
+            <div class="-mt-16">
+                <h1 class="button text-4xl px-5">
+                    <span class="label-up"> ÉMINENTE</span>
+                    <span class="label-up"> ÉMINENTE</span>
+                 </h1>
+                <h1 class="text-4xl px-5">
+                    
+                </h1>
+            <div class="image-div relative overflow-hidden m-5 w-[22vw] h-[29vw]">
+                <img src="../build/assets/img/Éminente_First.png" alt="">
+                <img src="../build/assets/img/img3-2.jpg" alt="">
+            </div>
+            <div class="flex justify-between px-5 py-4">
+                <h1 class="text-xl">
+                    Website Design,  <br class="hidden md:block">
+                    Development
+                </h1>
+                <p class="text-xl">2023</p>
+            </div>
+            <hr class="h-[1px] bg-white mx-5">
+            </div>
+            
+            <div class="hidden lg:block">
+            <div class="page3-circle4 mt-96 mx-10">
                 <svg class="button__arrow" viewBox="0 0 91 118" fill="none">
                     <path d="M15.2307 57.4152L15.9378 56.708L15.2307 56.0009L14.5236 56.708L15.2307 57.4152ZM34.9813 77.1658L34.2742 77.8729L35.9813 79.58L35.9813 77.1658L34.9813 77.1658ZM0.151478 72.4944L-0.555622 71.7873L-1.26273 72.4944L-0.555622 73.2015L0.151478 72.4944ZM45.29 117.633L44.5828 118.34L45.29 119.047L45.9971 118.34L45.29 117.633ZM60.3692 102.554L61.0763 103.261L61.7839 102.553L61.0758 101.846L60.3692 102.554ZM60.3685 102.553L59.6614 101.846L58.9538 102.553L59.6619 103.261L60.3685 102.553ZM90.427 72.4944L91.1341 73.2015L91.8412 72.4944L91.1341 71.7873L90.427 72.4944ZM75.3478 57.4152L76.0549 56.7081L75.3478 56.001L74.6407 56.7081L75.3478 57.4152ZM56.3065 76.4565L55.3065 76.4565L55.3065 78.8707L57.0136 77.1636L56.3065 76.4565ZM56.3065 0.120074L57.3065 0.120074L57.3065 -0.879926L56.3065 -0.879926L56.3065 0.120074ZM34.9813 0.120076L34.9813 -0.879924L33.9813 -0.879924L33.9813 0.120076L34.9813 0.120076ZM14.5236 58.1223L34.2742 77.8729L35.6884 76.4587L15.9378 56.708L14.5236 58.1223ZM0.858585 73.2015L15.9378 58.1223L14.5236 56.708L-0.555622 71.7873L0.858585 73.2015ZM45.9971 116.926L0.858585 71.7873L-0.555622 73.2015L44.5828 118.34L45.9971 116.926ZM59.662 101.846L44.5828 116.926L45.9971 118.34L61.0763 103.261L59.662 101.846ZM59.6619 103.261L59.6625 103.261L61.0758 101.846L61.0751 101.845L59.6619 103.261ZM61.0756 103.26L91.1341 73.2015L89.7199 71.7873L59.6614 101.846L61.0756 103.26ZM91.1341 71.7873L76.0549 56.7081L74.6407 58.1223L89.7199 73.2015L91.1341 71.7873ZM74.6407 56.7081L55.5994 75.7494L57.0136 77.1636L76.0549 58.1223L74.6407 56.7081ZM57.3065 76.4565L57.3065 0.120074L55.3065 0.120074L55.3065 76.4565L57.3065 76.4565ZM56.3065 -0.879926L34.9813 -0.879924L34.9813 1.12008L56.3065 1.12007L56.3065 -0.879926ZM33.9813 0.120076L33.9813 77.1658L35.9813 77.1658L35.9813 0.120076L33.9813 0.120076Z" fill="currentColor"></path></svg>
                     <div class="circle-in">
-                        <p id="circle3-text" class="text-black text-base font-bold">These are just few of them! <br>
-                            Here's our brief intro 😎
+                        <p class="text-black text-base font-bold text-center">We like its color palette 😱</p>
+                    </div> 
+            </div>
+        </div>
+
+            <div class="mt-10">
+                <h1 class="button text-4xl px-5">
+                    <span class="label-up"> WONDERWALL STUDIO</span>
+                    <span class="label-up"> WONDERWALL STUDIO</span>
+                 </h1>
+               
+            <div class="image-div relative overflow-hidden m-5 w-[27vw] h-[40vw]">
+                <img src="../build/assets/img/Wonderwall_1.png" alt="">
+                <img src="../build/assets/img/img4-2.jpg" alt="">
+            </div>
+            <div class="flex justify-between px-5 py-4">
+                <h1 class="text-xl">
+                   Website Design, <br class="hidden md:block">
+                    Development
+                </h1>
+                <p class="text-xl">2023</p>
+            </div>
+            <hr class="h-[1px] bg-white mx-5">
+            </div>
+
+            
+            <div class="page3-circle3 w-[23vw] h-[23vw] flex relative justify-center items-center bg-[#ffa63d] rounded-[50%] my-36 ml-[35%] hover:scale-[0.97] duration-[0.5s]" >
+           
+                    <div class="circle-inn hover:scale-[.97] duration-[0.5s]">
+                        <p id="circle3-text" class="text-white text-base font-bold text-center ">All project <span class="font-thin">(20)</span>
                         </p>
                     </div> 
             </div>
+        
         </div>
 
     </div>
 
 
     <!-- about section  -->
-    <div id="page4" class="relative w-full" data-scroll > 
-        <div id="page4-content" class="relative ml-[28%]">
-            <h1 id="about-obys" class="text-8xl relative uppercase">About OBYS</h1>
+    <div id="page4" class="relative w-full " data-scroll > 
+        <div id="page4-content" class="relative xl:ml-[28%] lg:ml-[25%] md:ml-[10%] lg:w-[73vw] w-full">
+            <h1 id="about-obys" class="lg:text-8xl text-5xl relative uppercase">About OBYS</h1>
             <div class="underline"></div>
-            <div id="intro" class="text-4xl text-white w-1/2 mb-24">
+            <div id="intro" class="xl:text-4xl text-2xl text-center md:text-start text-white lg:w-1/2 w-full mb-24">
                 <h2 >Our agency is about people who</h2>
                 <h2>love
                     creating,
@@ -180,14 +321,14 @@
             </div>
             <div id="page4-flex" class="flex">
                 <img  id="page4-flex-img" src="../build/assets/img/page4_award_img.jpg" class="w-1/2" alt="">
-                <p class="text-base text-white w-1/5 ml-10">We are happy to present our new website and updated version of Obys agency. As before we are open for new projects worldwide!
+                <p class="lg:text-base text-sm text-white xl:w-1/5 md:w-1/4 w-2/5 lg:ml-10 ml-4">We are happy to present our new website and updated version of Obys agency. As before we are open for new projects worldwide!
                 <br><br>
                 Would you like to have award winning site or unique branding style, please say hi to our manager —info@obys.agency.
                 And we will help you with the pleasure.
                 </p>
             </div>
          
-        <div id="page4-blue-div" class="bg-blue-600 relative ml-[350px] w-1/2 -mt-52 px-6 py-8">
+        <div id="page4-blue-div" class="bg-blue-600 relative xl:ml-[350px] md:ml-48 md:w-1/2 w-full xl:-mt-52 md:-mt-28 px-6 py-8">
             <div class="blue-div-elem">
                 <h4 class="text-4xl">Awwwards x16</h4>
                 <p class="text-base">SOTM, SOTD and Honrable Mentions</p>
@@ -241,74 +382,97 @@
 
 <!-- footer  -->
 
-<div id="footer" class="relative w-full pl-96 mt-24 pr-10" data-scroll>
-    <div id="footer-text" class="relative flex">
-        <h1 class="relative uppercase text-8xl">Let's Create</h1>
-        <h2 class="absolute -top-4 left-0 uppercase font-medium text-8xl">Let's Create</h2>
+<div id="footer" class="relative w-full xl:pl-96 lg:pl-64 mt-24 lg:pr-10" data-scroll>
+    <div id="footer-text" class="relative flex items-center md:justify-start justify-between md:ml-10 ml-6">
+        <h1 class="relative uppercase xl:text-8xl lg:text-6xl text-4xl">Let's Create</h1>
+        <h2 class="absolute left-0 uppercase font-medium xl:text-8xl lg:text-6xl text-4xl">Let's Create</h2> &nbsp;&nbsp;&nbsp;
         <img src="../build/assets/img/arrow.png" alt="">
 
     </div>
     <div class="underlines"></div>
-    <div id="footer-div" class="flex justify-between pr-48 pt-8 mb-6">
+    <div id="footer-div" class="flex md:justify-between gap-8 md:gap-0 xl:pr-48 md:px-10 px-4 pt-8 mb-6">
         <div id="box">
-            <h6 class="text-2xl font-medium mb-5">Socials</h6>
-            <h5 class="text-lg font-medium">Dribbble</h5>
-            <h5 class="text-lg font-medium">Behance</h5>
-            <h5 class="text-lg font-medium">Instagram</h5>
-            <h5 class="text-lg font-medium">Facebook</h5>
-            <h5 class="text-lg font-medium">Twitter</h5>
-            <h5 class="text-lg font-medium">YouTube</h5>   
+            <h6 class="md:text-2xl text-lg font-medium mb-5">Socials</h6>
+            <h5 class="md:text-lg text-sm font-medium">Dribbble</h5>
+            <h5 class="md:text-lg text-sm font-medium">Behance</h5>
+            <h5 class="md:text-lg text-sm font-medium">Instagram</h5>
+            <h5 class="md:text-lg text-sm font-medium">Facebook</h5>
+            <h5 class="md:text-lg text-sm font-medium">Twitter</h5>
+            <h5 class="md:text-lg text-sm font-medium">YouTube</h5>   
         </div>
         <div id="box">
-        <h6 class="text-2xl font-medium mb-5">Address</h6>
-            <h5 class="text-lg font-medium">Pushkinska 5
-                61057 Kharkiv
+        <h6 class="md:text-2xl text-lg font-medium mb-5">Address</h6>
+            <h5 class="md:text-lg text-sm font-medium">Pushkinska 5
+                61057 Kharkiv <br class="md:hidden block">
                 Ukraine
             </h5>
         </div>
         <div id="box" class="w-1/5">
-            <h6 class="text-2xl font-medium mb-5">Say Hi!</h6>
-            <h5 class="text-lg font-medium">info@obys.agency</h5>
+            <h6 class="md:text-2xl text-lg font-medium mb-5">Say Hi!</h6>
+            <h5 class="md:text-lg text-sm font-medium">info@obys.agency</h5>
         </div>
     </div>
     <div class="underlinee"></div>
     
-    <h5 class="text-lg font-medium">Obys Agency, ©️2023</h5>
+    <h5 class="text-lg font-medium text-center">Obys Agency, ©️2023</h5>
 
 </div>
 
 
 </div>
+</main>
 
 
 
 
+ <!-- Matrix animation js start -->
+ <!-- <script>
+    document.addEventListener("DOMContentLoaded", () => {
+      const matrixContainer = document.querySelector('.matrix');
+      const columns = Math.floor(window.innerWidth / 20);
+      const rows = Math.floor(window.innerHeight / 20);
+      for (let i = 0; i < columns; i++) {
+        for (let j = 0; j < rows; j++) {
+          const span = document.createElement('span');
+          span.style.left = `${i * 20}px`;
+          span.style.top = `${j * 20}px`;
+          span.style.animationDelay = `${Math.random() * 5}s`;
+          span.textContent = generateRandomCharacter();
+          matrixContainer.appendChild(span);
+        }
+      }
+      function generateRandomCharacter() {
+        const characters = 'ABCDEF0123456789*';
+        return characters.charAt(Math.floor(Math.random() * characters.length));
+      }
+    });
+
+  </script> -->
+  <!-- Matrix animation js end -->
 
 
 
-
-
-
-
-
-
-
-
-
-<script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@latest/dist/locomotive-scroll.min.js"></script>
+<script src="
+https://cdn.jsdelivr.net/npm/locomotive-scroll@4.1.4/dist/locomotive-scroll.min.js
+"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js" integrity="sha512-7eHRwcbYkK4d9g/6tD/mhkf++eoTHwpNM9woBxtPUBWm67zeAfFC+HrdoE2GanKeocly/VxeLvIqwvCdk7qScg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 <!--Scroll Trigger-->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js" integrity="sha512-onMTRKJBKz8M1TnqqDuGBlowlH0ohFzMXYRNebz+yOcc5TQr/zAKsthzhuv0hiyUKEiQEQXEynnXCvNTOk50dg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
-<!-- jQuery -->
 
-<!-- Three.js is needed for 3D Effects -->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r155/three.min.js"></script>
+
+<!-- j query
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script> -->
+
+
+
+<!-- Three.js is needed for 3d Effects -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/0.155.0/three.min.js"></script>
 
 <!-- ControlKit is needed for Debug Panel -->
 <script src="https://cdn.jsdelivr.net/gh/automat/controlkit.js@master/bin/controlKit.min.js"></script>
 
-<script type="text/javascript" src="https://unpkg.com/sheryjs/dist/Shery.js"></script>
+<script  type="text/javascript"  src="https://unpkg.com/sheryjs/dist/Shery.js"></script><!--Sherry js ka script-->
 
 <script src="../build/assets/index.js"></script>
 

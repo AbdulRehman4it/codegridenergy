@@ -1,0 +1,421 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Obys Agency</title>
+  <link rel="icon" type="image/x-icon" href="../build/assets/img/favicon.png">
+
+  <link href="
+  https://cdn.jsdelivr.net/npm/locomotive-scroll@4.1.4/dist/locomotive-scroll.min.css
+  " rel="stylesheet">
+  
+  <link rel="stylesheet" href="https://unpkg.com/sheryjs/dist/Shery.css" />  <!-- Shery Js -->
+  <!-- remix icon cdn -->
+  <link
+  href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css"
+  rel="stylesheet"/>
+
+
+  <link href="./assets/css/output.css" rel="stylesheet">
+
+</head>
+<body>
+
+   <!--Preloader start-->
+  <!-- <div id="preloader" class="fixed inset-0  flex justify-center items-center z-50 ">
+    <div class="matrix ">
+    </div>
+  </div> -->
+  <!-- Preloader end --> 
+  
+  <!-- curser  -->
+  <div id="crsr"></div> 
+
+  <!-- loader  -->
+  <div id="loader" class="2xl:px-48 xl:px-44 px-6 py-24 xl:py-48">   
+    <div class="line">
+        <div id="line1-part1">
+            <h5 class="lg:text-5xl text-2xl">00</h5>
+            <h6 class="lg:text-5xl text-2xl font-thin">- 100</h6>
+        </div>  
+        <h1 class="lg:text-[80px] 2xl:text-9xl md:text-6xl text-3xl font-black uppercase">Your</h1>
+    </div>
+    <div class="line">
+        <h1 class="lg:text-[80px] 2xl:text-9xl md:text-6xl  text-3xl font-black uppercase">Web experiences</h1>
+    </div>
+    <div class="line">
+        <h1 class="lg:text-[80px] 2xl:text-9xl md:text-6xl  text-3xl font-black uppercase "> is Loading right </h1>
+        <h2 class="xl:text-[75px] 2xl:text-8xl lg:text-6xl md:text-4xl text-2xl font-black uppercase">Now</h2>
+    </div>
+    <div class="text-base 2xl:text-xl text-start pl-32 pt-10 font-semibold">
+        Please wait a  <br>
+       few second
+    </div>
+</div>
+
+<main>
+<!-- main  -->
+<div id="main" class="bg-[#151515] relative">
+
+         <!-- navbar  -->
+         <div id="page1" class="relative w-full h-[100vh] z-[100]" data-scroll>
+            
+          <div id="nav" class="flex items-center justify-between">
+            <a href="index.html">
+              <svg class="brand__svg" width="71" height="27" viewBox="0 0 71 27">
+                  <path d="M40.7622 24.5917C40.7622 23.6724 41.4511 22.9829 42.3697 22.9829C43.2883 22.9829 43.9773 23.6724 43.9773 24.5917C43.9773 25.511 43.2883 26.2005 42.3697 26.2005C41.566 26.2005 40.7622 25.3961 40.7622 24.5917Z" fill="currentColor"></path>
+                  <path d="M65.7937 8.96329C65.7937 8.04398 66.4826 7.35449 67.4012 7.35449C68.3198 7.35449 69.0087 8.04398 69.0087 8.96329C69.0087 9.88261 68.3198 10.5721 67.4012 10.5721C66.4826 10.5721 65.7937 9.88261 65.7937 8.96329Z" fill="currentColor"></path>
+                  <path d="M59.019 18.3861C59.019 17.4668 59.708 16.7773 60.6266 16.7773C61.5451 16.7773 62.2341 17.4668 62.2341 18.3861C62.2341 19.3055 61.5451 19.9949 60.6266 19.9949C59.8228 19.9949 59.019 19.3055 59.019 18.3861Z" fill="currentColor"></path>
+                  <path d="M41.3365 9.88276C40.5327 8.27396 39.6142 7.8143 39.04 7.58447H46.3887C45.9294 7.8143 45.0108 8.04413 45.0108 8.96344C45.0108 9.19327 45.1257 9.65293 45.3553 10.1126L48.3407 16.6627L46.5035 20.225L41.3365 9.88276Z" fill="currentColor"></path>
+                  <path d="M51.8998 9.30819C51.8998 8.04413 50.9812 7.69939 50.2922 7.58447H54.6555C53.8517 7.8143 52.8183 8.27396 51.7849 10.1126C51.8998 9.88276 51.8998 9.65293 51.8998 9.30819Z" fill="currentColor"></path>
+                  <path d="M66.7122 17.9266C66.7122 16.2029 65.2195 15.6283 63.0378 14.5941C60.8562 13.5599 59.019 12.7555 59.019 10.8019C59.019 8.73348 60.971 7.12468 64.1861 7.00977C63.1527 7.23959 62.3489 8.15891 62.3489 9.42296C62.3489 10.9168 63.612 11.4914 65.9084 12.5256C68.2049 13.5599 70.2717 14.4792 70.2717 16.6626C70.2717 19.1907 67.4011 20.3398 64.6454 20.4547C65.9084 20.2249 66.7122 19.1907 66.7122 17.9266Z" fill="currentColor"></path>
+                  <path d="M21.0129 2.64303C21.0129 1.6088 20.3239 0.919313 19.2905 0.689485L24.4576 0V20.3398C24.4576 20.3398 22.6204 20.4547 20.8981 21.8337V2.64303H21.0129Z" fill="currentColor"></path>
+                  <path d="M34.6764 14.0195C34.6764 10.4572 31.691 7.58432 27.9019 7.35449C30.1983 7.69923 30.8873 11.4914 30.8873 14.0195C30.8873 16.5476 30.1983 20.2249 27.9019 20.6845C31.8058 20.4547 34.6764 17.5819 34.6764 14.0195Z" fill="currentColor"></path>
+                  <path d="M14.9269 14.0195C14.9269 10.4572 11.9415 7.58432 8.15234 7.35449C10.4488 7.69923 11.1377 11.4914 11.1377 14.0195C11.1377 16.5476 10.4488 20.2249 8.15234 20.6845C11.9415 20.4547 14.9269 17.5819 14.9269 14.0195Z" fill="currentColor"></path>
+                  <path d="M0 14.0195C0 10.4572 2.9854 7.58432 6.77456 7.35449C4.4781 7.69923 3.78916 11.4914 3.78916 14.0195C3.78916 16.5476 4.4781 20.2249 6.77456 20.6845C2.9854 20.4547 0 17.5819 0 14.0195Z" fill="currentColor"></path>
+                </svg>
+                </a>
+              <div id="nav-part2" class="flex justify-center items-center gap-[3vw]">
+                <a href="work.html">
+                  <h4 class="text-xl font-black"> Works</h4>
+                </a>
+                <a href="">
+                  <h4 class="text-xl font-black"> About</h4>
+                </a>
+                <a href="contact.html">
+                  <h4 class="text-xl font-black"> Contacts</h4>
+                </a>
+              </div>    
+          </div>
+
+          <div class="hero md:w-[70%] w-full md:ml-[27%] mx-12 flex items-center z-[999] overflow-hidden " id="hero1">
+              <h1 class="relative xl:text-8xl lg:text-7xl md:text-5xl text-4xl leading-[50px] md:leading-[90px] uppercase font-semibold text-center lg:text-start">Obys —</h1>
+          </div>
+          <div class="hero md:w-[70%] w-full mx-12 flex items-center z-[999] overflow-hidden" id="hero2">
+              <h1 class="relative xl:text-8xl lg:text-7xl md:text-5xl text-4xl leading-[50px] md:leading-[90px] uppercase font-semibold text-center lg:text-start">Award wining</h1>
+          </div>
+          
+          <div class="hero md:w-[70%] w-full mx-12 flex items-center z-[999] overflow-hidden" id="hero4">
+              <h1 class="relative xl:text-8xl lg:text-7xl md:text-5xl text-4xl leading-[50px] md:leading-[90px] uppercase font-semibold text-center items-center lg:text-start">creative design</h1>
+          </div>
+          <div class="hero md:w-[70%] w-full mx-12 flex items-center z-[999] overflow-hidden" id="hero4">
+            <h1 class="relative xl:text-8xl lg:text-7xl md:text-5xl text-4xl leading-[50px] md:leading-[90px] uppercase font-semibold text-center items-center lg:text-start">agency</h1>
+        </div>
+      </div>
+
+      <section class="lg:pr-20 md:px-5 lg:px-0 md:pt-28 xl:pt-0">
+        <div class="uppercase md:text-end text-center xl:text-8xl 2xl:text-9xl md:text-6xl text-4xl italic md:pl-10">
+            <h1 class="xl:pr-72 lg:pr-48" style="-webkit-text-stroke:2px white; color: transparent;">our team</h1>
+            <h1 style="-webkit-text-stroke:2px white; color: transparent;">loves to create</h1>
+            <h1 style="-webkit-text-stroke:2px white; color: transparent;">unique web and </h1>
+            <h1 style="-webkit-text-stroke:2px white; color: transparent;">graphic experiences.</h1>
+            
+        </div>
+    </section>
+
+    <section>
+        <div class="flex justify-end items-end lg:pr-20 py-10 px-5 lg:px-0">
+        <hr class="lg:w-[70%] w-full h-[1px]">
+    </div>
+        <div class="items-center flex flex-col justify-center px-5 md:px-0">
+            <p class="text-4xl font-medium lg:w-2/5 md:w-1/2 md:text-start text-center">Our agency is about people who love creating, designing and developing wow projects. At the same time we are a boutique agency that is more than the collective. We learn and grow, win and celebrate together.</p>
+            
+        </div>
+        <div class="flex flex-col justify-center lg:pl-[30%] md:pl-[25%] pt-10 px-5 md:px-0 md:text-start text-center">
+            <p class="text-lg">We are happy to present our new website and updated <br class="hidden md:block">
+                version of Obys agency. As before we are open for new
+            <br class="hidden md:block">projects worldwide!
+        </p>
+        <p class="text-lg pt-6">Would you like to have an award winning site or unique <br class="hidden md:block">
+            branding style, please say hi to us —
+        <br class="hidden md:block">info@obys.agency. And we will help you with pleasure.
+    </p>
+            </div>
+    </section>
+
+    <section>
+        <div class="flex justify-end lg:pr-20 py-6 px-5 lg:px-0">
+        <hr class="lg:w-1/3 w-full">
+    </div>
+        <div class="flex justify-center lg:justify-start md:items-center lg:pl-[30%] xl:gap-44 lg:gap-28 md:gap-36">
+            <div class="hidden md:block">
+                <div class="page3-circle5 mt-0">
+                    <svg class="button__arrow" viewBox="0 0 91 118" fill="none">
+                        <path d="M15.2307 57.4152L15.9378 56.708L15.2307 56.0009L14.5236 56.708L15.2307 57.4152ZM34.9813 77.1658L34.2742 77.8729L35.9813 79.58L35.9813 77.1658L34.9813 77.1658ZM0.151478 72.4944L-0.555622 71.7873L-1.26273 72.4944L-0.555622 73.2015L0.151478 72.4944ZM45.29 117.633L44.5828 118.34L45.29 119.047L45.9971 118.34L45.29 117.633ZM60.3692 102.554L61.0763 103.261L61.7839 102.553L61.0758 101.846L60.3692 102.554ZM60.3685 102.553L59.6614 101.846L58.9538 102.553L59.6619 103.261L60.3685 102.553ZM90.427 72.4944L91.1341 73.2015L91.8412 72.4944L91.1341 71.7873L90.427 72.4944ZM75.3478 57.4152L76.0549 56.7081L75.3478 56.001L74.6407 56.7081L75.3478 57.4152ZM56.3065 76.4565L55.3065 76.4565L55.3065 78.8707L57.0136 77.1636L56.3065 76.4565ZM56.3065 0.120074L57.3065 0.120074L57.3065 -0.879926L56.3065 -0.879926L56.3065 0.120074ZM34.9813 0.120076L34.9813 -0.879924L33.9813 -0.879924L33.9813 0.120076L34.9813 0.120076ZM14.5236 58.1223L34.2742 77.8729L35.6884 76.4587L15.9378 56.708L14.5236 58.1223ZM0.858585 73.2015L15.9378 58.1223L14.5236 56.708L-0.555622 71.7873L0.858585 73.2015ZM45.9971 116.926L0.858585 71.7873L-0.555622 73.2015L44.5828 118.34L45.9971 116.926ZM59.662 101.846L44.5828 116.926L45.9971 118.34L61.0763 103.261L59.662 101.846ZM59.6619 103.261L59.6625 103.261L61.0758 101.846L61.0751 101.845L59.6619 103.261ZM61.0756 103.26L91.1341 73.2015L89.7199 71.7873L59.6614 101.846L61.0756 103.26ZM91.1341 71.7873L76.0549 56.7081L74.6407 58.1223L89.7199 73.2015L91.1341 71.7873ZM74.6407 56.7081L55.5994 75.7494L57.0136 77.1636L76.0549 58.1223L74.6407 56.7081ZM57.3065 76.4565L57.3065 0.120074L55.3065 0.120074L55.3065 76.4565L57.3065 76.4565ZM56.3065 -0.879926L34.9813 -0.879924L34.9813 1.12008L56.3065 1.12007L56.3065 -0.879926ZM33.9813 0.120076L33.9813 77.1658L35.9813 77.1658L35.9813 0.120076L33.9813 0.120076Z" fill="currentColor"></path></svg>
+                    <div class="circle-in">
+                        <p class="text-black text-base font-bold">This is what we love especially 🖤</p>
+                    </div>    
+                </div>
+            </div>
+
+            <div class="text-center lg:text-start"> 
+                <p class="text-xl">Our services</p>
+                <ul class="text-4xl pt-5">
+                    <li>UI/UX Design</li>
+                    <li>Art Direction</li>
+                    <li>Strategy</li>
+                    <li>Logo Design</li>
+                    <li>Front-End</li>
+                    <li>Branding</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+<section>
+ <div class="lg:pl-[27%] px-5 lg:px-0 pt-40">
+    <div class="flex pb-10">
+        <p class="italic md:text-5xl text-2xl">02</p> &nbsp; &nbsp; &nbsp;
+        <h1 class="md:text-8xl text-5xl">CORE TEAM</h1>
+    </div>
+    <div class="justify-end lg:pr-20 py-10">
+         <hr class="w-full">
+    </div>
+    
+    <div class="flex md:flex-row flex-col lg:gap-28 gap-10">
+        <div>
+            <h1 class="text-[40px] leading-10">
+                We are a team of like-minded people driven by passion to what we do.
+            </h1>
+        </div>
+        <div>
+            <p class="lg:text-xl text-base xl:pr-52 lg:pr-20">
+                We are like a family with common goals, views on design and love of burgers. Every day step by step we create great design future. Our goal is create unique web and graphic experience.<br>
+                Meet our main players on the design field.
+            </p>
+        </div>
+    </div>
+
+    <div id="image-div-container" class="relative flex"> 
+
+        <!-- first row  -->
+        <div class="mt-20">
+        <div class="image-div relative overflow-hidden m-5 xl:w-[32vw] lg:w-[29vw] lg:h-[38vw] md:w-[35vw] md:h-[41vw] w-full h-[60vw]">
+            <img src="../build/assets/img/team-image01-hover.jpg" alt="">
+            <img src="../build/assets/img/img1-2.jpg" alt="">
+        </div>
+        <div class="flex justify-between px-5 py-4">
+        <h1 class="xl:text-xl text-base">
+            Viacheslav Olianishyn
+        </h1>
+        <p class="text-xl">CEO & Art Director</p>
+    </div>
+    <hr class="h-[1px] bg-white mx-5">
+    </div>
+
+    <div class="md:mt-48 mt-2">
+        
+        <div class="image-div relative overflow-hidden m-5 xl:w-[32vw] lg:w-[29vw] lg:h-[38vw] md:w-[35vw] md:h-[41vw] w-full h-[60vw]">
+            <img src="../build/assets/img/team-image02-hover.jpg" alt="">
+            <img src="../build/assets/img/img2-2.jpg" alt="">
+        </div>
+        <div class="flex justify-between px-5 py-4">
+            <h1 class="text-xl">
+                Olha Olianishyna
+            </h1>
+            <p class="text-xl">Managing Director</p>
+        </div>
+        <hr class="h-[1px] bg-white mx-5">
+    </div>
+
+        <!-- second row  -->
+
+        <div class="">
+           
+        <div class="image-div relative overflow-hidden m-5 xl:w-[32vw] lg:w-[29vw] lg:h-[38vw] md:w-[35vw] md:h-[41vw] w-full h-[60vw]">
+            <img src="../build/assets/img/team-image03-hover.jpg" alt="">
+            <img src="../build/assets/img/img3-2.jpg" alt="">
+        </div>
+        <div class="flex justify-between px-5 py-4">
+            <h1 class="xl:text-xl text-base">
+                Roman Salo
+            </h1>
+            <p class="text-xl">UI/UX Designer</p>
+        </div>
+        <hr class="h-[1px] bg-white mx-5">
+        </div>
+
+        <div class="md:mt-20 mt-2" >
+            
+        <div class="image-div relative overflow-hidden m-5 xl:w-[32vw] lg:w-[29vw] lg:h-[38vw] md:w-[35vw] md:h-[41vw] w-full h-[60vw]">
+            <img src="../build/assets/img/team-image04-hover.jpg" alt="">
+            <img src="../build/assets/img/img4-2.jpg" alt="">
+        </div>
+        <div class="flex justify-between px-5 py-4">
+            <h1 class="xl:text-xl text-base">
+                Kostiantyn Yakovliev
+            </h1>
+            <p class="text-xl">Graphic designer</p>
+        </div>
+        <hr class="h-[1px] bg-white mx-5">
+        </div>
+
+       <!-- thired row  -->
+
+        <!-- <div class="lg:-mt-16 mt-4">
+            <h1 class="button xl:text-4xl text-2xl px-5">
+                <span class="label-up"> ÉMINENTE</span>
+                <span class="label-up"> ÉMINENTE</span>
+             </h1>
+            <h1 class="text-4xl px-5">
+                
+            </h1>
+        <div class="image-div relative overflow-hidden m-5 lg:w-[22vw] lg:h-[29vw] md:w-[28vw] md:h-[32vw] w-full h-[50vw]">
+            <img src="../build/assets/img/Éminente_First.png" alt="">
+            <img src="../build/assets/img/img3-2.jpg" alt="">
+        </div>
+        <div class="flex justify-between px-5 py-4">
+            <h1 class="xl:text-xl text-base">
+                Website Design,  <br class="hidden md:block">
+                Development
+            </h1>
+            <p class="text-xl">2023</p>
+        </div>
+        <hr class="h-[1px] bg-white mx-5">
+        </div> -->
+        
+
+        <div class="mt-4 md:mt-0">
+        <div class="image-div relative overflow-hidden m-5 xl:w-[32vw] lg:w-[29vw] lg:h-[38vw] md:w-[35vw] md:h-[41vw] w-full h-[60vw]">
+            <img src="../build/assets/img/team-image05-hover.jpg" alt="">
+            <img src="../build/assets/img/img4-2.jpg" alt="">
+        </div>
+        <div class="flex justify-between px-5 py-4">
+            <h1 class="xl:text-xl text-base">
+                Bize aka “Stig”
+            </h1>
+            <p class="text-xl">Bize aka “Stig”
+            </p>
+        </div>
+        <hr class="h-[1px] bg-white mx-5">
+        </div>
+    
+    </div>
+</div>
+</section>
+
+ <!-- text animation  -->
+
+
+
+
+<!-- footer  -->
+
+<div id="footer" class="relative w-full xl:pl-96 lg:pl-64 mt-24 lg:pr-10" data-scroll>
+    <div id="footer-text" class="relative flex items-center md:justify-start justify-between md:ml-10 ml-6">
+        <h1 class="relative uppercase xl:text-8xl lg:text-6xl text-4xl">Let's Create</h1>
+        <h2 class="absolute left-0 uppercase font-medium xl:text-8xl lg:text-6xl text-4xl">Let's Create</h2> &nbsp;&nbsp;&nbsp;
+        <img src="../build/assets/img/arrow.png" alt="">
+
+    </div>
+    <div class="underlines"></div>
+    <div id="footer-div" class="flex md:justify-between gap-8 md:gap-0 xl:pr-48 md:px-10 px-4 pt-8 mb-6">
+        <div id="box">
+            <h6 class="md:text-2xl text-lg font-medium mb-5">Socials</h6>
+            <h5 class="button md:text-lg text-sm font-medium">
+                <span class="label-up">Dribble</span>
+                <span class="label-up">Dribble</span>
+            </h5>
+            <h5 class="button md:text-lg text-sm font-medium">
+                <span class="label-up">Behance</span>
+                <span class="label-up">Behance</span>
+            </h5>
+            <h5 class="button md:text-lg text-sm font-medium">
+                <span class="label-up">Instagram</span>
+                <span class="label-up">Instagram</span>
+            </h5>
+            <h5 class="button md:text-lg text-sm font-medium">
+                <span class="label-up">Facebook</span>
+                <span class="label-up">Facebook</span>
+            </h5>
+            <h5 class="button md:text-lg text-sm font-medium">
+                <span class="label-up">Twitter</span>
+                <span class="label-up">Twitter</span>
+            </h5>
+            <h5 class="button md:text-lg text-sm font-medium">
+                <span class="label-up">Youtube</span>
+                <span class="label-up">Youtube</span>
+            </h5>
+        </div>
+        <div id="box">
+        <h6 class="md:text-2xl text-lg font-medium mb-5">Address</h6>
+            <h5 class="md:text-lg text-sm font-medium">Pushkinska 5
+                61057 Kharkiv <br class="md:hidden block">
+                Ukraine
+            </h5>
+        </div>
+        <div id="box" class="w-1/5">
+            <h6 class="md:text-2xl text-lg font-medium mb-5">Say Hi!</h6>
+            <h5 class="button md:text-lg text-sm font-medium">
+                <span class="label-up underline">info@obys.agency</span>
+                <span class="label-up">info@obys.agency</span>
+            </h5>
+        </div>
+    </div>
+    <div class="underlinee"></div>
+    
+    <h5 class="text-lg font-medium text-center">Obys Agency, ©️2023</h5>
+
+</div>
+
+
+</div>
+</main>
+
+
+
+
+ <!-- Matrix animation js start -->
+ <!-- <script>
+    document.addEventListener("DOMContentLoaded", () => {
+      const matrixContainer = document.querySelector('.matrix');
+      const columns = Math.floor(window.innerWidth / 20);
+      const rows = Math.floor(window.innerHeight / 20);
+      for (let i = 0; i < columns; i++) {
+        for (let j = 0; j < rows; j++) {
+          const span = document.createElement('span');
+          span.style.left = `${i * 20}px`;
+          span.style.top = `${j * 20}px`;
+          span.style.animationDelay = `${Math.random() * 5}s`;
+          span.textContent = generateRandomCharacter();
+          matrixContainer.appendChild(span);
+        }
+      }
+      function generateRandomCharacter() {
+        const characters = 'ABCDEF0123456789*';
+        return characters.charAt(Math.floor(Math.random() * characters.length));
+      }
+    });
+
+  </script> -->
+  <!-- Matrix animation js end -->
+
+
+
+<script src="
+https://cdn.jsdelivr.net/npm/locomotive-scroll@4.1.4/dist/locomotive-scroll.min.js
+"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js" integrity="sha512-7eHRwcbYkK4d9g/6tD/mhkf++eoTHwpNM9woBxtPUBWm67zeAfFC+HrdoE2GanKeocly/VxeLvIqwvCdk7qScg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<!--Scroll Trigger-->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js" integrity="sha512-onMTRKJBKz8M1TnqqDuGBlowlH0ohFzMXYRNebz+yOcc5TQr/zAKsthzhuv0hiyUKEiQEQXEynnXCvNTOk50dg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+
+
+<!-- j query
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script> -->
+
+
+
+<!-- Three.js is needed for 3d Effects -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/0.155.0/three.min.js"></script>
+
+<!-- ControlKit is needed for Debug Panel -->
+<script src="https://cdn.jsdelivr.net/gh/automat/controlkit.js@master/bin/controlKit.min.js"></script>
+
+<script  type="text/javascript"  src="https://unpkg.com/sheryjs/dist/Shery.js"></script><!--Sherry js ka script-->
+
+<script src="../build/assets/index.js"></script>
+
+</body>
+</html>

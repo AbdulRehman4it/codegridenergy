@@ -327,7 +327,7 @@ html,body{
     /* page 3  */
 
 #page3{
-    min-height: 100vh;
+    /* min-height: 100vh; */
 }
 
 #page3 h1::before{
@@ -473,6 +473,30 @@ height: 30%;
 .page3-circle3 svg{
 height: 30%;
 }
+
+.page3-circle5{
+    height: 20vw;
+    width: 20vw;
+    border: 2px solid#fff;
+    border-radius: 50%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    /* margin-left: 10vw; */
+    position: relative;
+    
+}
+.page3-circle5 svg{
+height: 30%;
+rotate: -90deg;
+}
+
 .circle-in{
      height: 100%;
     width: 100%;
@@ -538,6 +562,12 @@ height: 30%;
     scale: 1;
 }
 .page3-circle4:hover .circle-in p{
+    scale: 1;
+} 
+.page3-circle5:hover .circle-in{
+    scale: 1;
+}
+.page3-circle5:hover .circle-in p{
     scale: 1;
 } 
 

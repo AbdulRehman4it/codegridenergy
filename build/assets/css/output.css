@@ -639,6 +639,11 @@ video {
   margin-right: 1.25rem;
 }
 
+.mx-auto {
+  margin-left: auto;
+  margin-right: auto;
+}
+
 .my-3 {
   margin-top: 0.75rem;
   margin-bottom: 0.75rem;
@@ -664,6 +669,10 @@ video {
 
 .mb-24 {
   margin-bottom: 6rem;
+}
+
+.mb-4 {
+  margin-bottom: 1rem;
 }
 
 .mb-5 {
@@ -702,6 +711,10 @@ video {
   margin-top: 0px;
 }
 
+.mt-1 {
+  margin-top: 0.25rem;
+}
+
 .mt-10 {
   margin-top: 2.5rem;
 }
@@ -726,6 +739,10 @@ video {
   margin-top: 1rem;
 }
 
+.mt-8 {
+  margin-top: 2rem;
+}
+
 .mt-96 {
   margin-top: 24rem;
 }
@@ -736,6 +753,10 @@ video {
 
 .flex {
   display: flex;
+}
+
+.table {
+  display: table;
 }
 
 .grid {
@@ -756,6 +777,10 @@ video {
 
 .h-\[100vh\] {
   height: 100vh;
+}
+
+.h-\[10vh\] {
+  height: 10vh;
 }
 
 .h-\[1px\] {
@@ -780,6 +805,10 @@ video {
 
 .h-px {
   height: 1px;
+}
+
+.h-screen {
+  height: 100vh;
 }
 
 .w-1\/2 {
@@ -812,6 +841,10 @@ video {
 
 .w-full {
   width: 100%;
+}
+
+.max-w-4xl {
+  max-width: 56rem;
 }
 
 .grow {
@@ -882,6 +915,10 @@ video {
   overflow: hidden;
 }
 
+.overflow-x-auto {
+  overflow-x: auto;
+}
+
 .overflow-x-hidden {
   overflow-x: hidden;
 }
@@ -907,6 +944,11 @@ video {
   border-color: rgb(0 0 0 / var(--tw-border-opacity, 1));
 }
 
+.border-gray-700 {
+  --tw-border-opacity: 1;
+  border-color: rgb(55 65 81 / var(--tw-border-opacity, 1));
+}
+
 .bg-\[\#151515\] {
   --tw-bg-opacity: 1;
   background-color: rgb(21 21 21 / var(--tw-bg-opacity, 1));
@@ -917,6 +959,11 @@ video {
   background-color: rgb(255 166 61 / var(--tw-bg-opacity, 1));
 }
 
+.bg-black {
+  --tw-bg-opacity: 1;
+  background-color: rgb(0 0 0 / var(--tw-bg-opacity, 1));
+}
+
 .bg-blue-600 {
   --tw-bg-opacity: 1;
   background-color: rgb(37 99 235 / var(--tw-bg-opacity, 1));
@@ -925,6 +972,11 @@ video {
 .bg-orange-400 {
   --tw-bg-opacity: 1;
   background-color: rgb(251 146 60 / var(--tw-bg-opacity, 1));
+}
+
+.bg-orange-500 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(249 115 22 / var(--tw-bg-opacity, 1));
 }
 
 .bg-transparent {
@@ -964,6 +1016,11 @@ video {
   padding-bottom: 2.5rem;
 }
 
+.py-2 {
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+}
+
 .py-24 {
   padding-top: 6rem;
   padding-bottom: 6rem;
@@ -1001,6 +1058,10 @@ video {
   padding-left: 1.25rem;
 }
 
+.pr-4 {
+  padding-right: 1rem;
+}
+
 .pt-10 {
   padding-top: 2.5rem;
 }
@@ -1033,8 +1094,16 @@ video {
   padding-top: 2rem;
 }
 
+.text-left {
+  text-align: left;
+}
+
 .text-center {
   text-align: center;
+}
+
+.text-right {
+  text-align: right;
 }
 
 .text-start {
@@ -1132,6 +1201,21 @@ video {
 .text-black {
   --tw-text-opacity: 1;
   color: rgb(0 0 0 / var(--tw-text-opacity, 1));
+}
+
+.text-gray-400 {
+  --tw-text-opacity: 1;
+  color: rgb(156 163 175 / var(--tw-text-opacity, 1));
+}
+
+.text-gray-500 {
+  --tw-text-opacity: 1;
+  color: rgb(107 114 128 / var(--tw-text-opacity, 1));
+}
+
+.text-orange-500 {
+  --tw-text-opacity: 1;
+  color: rgb(249 115 22 / var(--tw-text-opacity, 1));
 }
 
 .text-white {
@@ -1269,6 +1353,58 @@ html,body{
 #line1-part1 h5{
   width: 5vw;
   text-align: right;
+}
+
+.linee{
+  height: -moz-fit-content;
+  height: fit-content;
+  overflow: hidden;
+  /* Overflow hidden se ye hoga ki iske gsap me to y 150 de rakhi hain and idhr hai ki overflow hidden ho gya us div se so isi karan ye just neeche se hi aaata hua appear hota hai rather than y 150 se */
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 2.5vw;
+}
+
+.linee h1{
+  text-transform: uppercase;
+  opacity: 0;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes anime {
+  0%{
+    font-family: "plain light";
+    -webkit-text-stroke: 1px #fff;
+    color: #fff;
+    font-weight: 500;
+    opacity: 1;
+  }
+
+  48%{
+    font-family: "plain light";
+    -webkit-text-stroke: 1px #fff;
+    color: #fff;
+    font-weight: 500;
+    opacity: 0;
+  }
+
+  50%{
+    font-family: "silk serif";
+    -webkit-text-stroke: 1px #fff;
+    color: transparent;
+    font-weight: 500;
+    opacity: 1;
+  }
+
+  100%{
+    font-family: "silk serif";
+    -webkit-text-stroke: 1px #fff;
+    color: transparent;
+    font-weight: 500;
+    opacity: 0;
+  }
 }
 
 .line h2{
@@ -1979,6 +2115,11 @@ html,body{
   background-color: rgb(251 146 60 / var(--tw-bg-opacity, 1));
 }
 
+.hover\:text-white:hover {
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity, 1));
+}
+
 .focus\:border-blue-500:focus {
   --tw-border-opacity: 1;
   border-color: rgb(59 130 246 / var(--tw-border-opacity, 1));
@@ -2613,6 +2754,10 @@ html,body{
     padding-left: 24rem;
   }
 
+  .xl\:pl-\[22\%\] {
+    padding-left: 22%;
+  }
+
   .xl\:pr-48 {
     padding-right: 12rem;
   }
@@ -2696,7 +2841,7 @@ html,body{
 }
 
 
-
+ 
 
 
 

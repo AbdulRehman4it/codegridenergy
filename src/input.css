@@ -334,7 +334,7 @@ html,body{
     }
  
     #hero1::before{
-        content: "01";
+        content: "";
         position: absolute;
         font-size: 3vw;
         font-weight: 100;
@@ -427,7 +427,7 @@ html,body{
 }
 
 #page3 h1::before{
-    content: "02";
+    content: "";
     position: absolute;
     font-size: 3vw;
     font-weight: 100;
@@ -714,7 +714,7 @@ height: 30%;
 } */
 
 #page4-content h1::before{
-    content: "03";
+    content: "";
     position: absolute;
     font-size: 3vw;
     font-weight: 100;
@@ -860,7 +860,7 @@ height: 30%;
 }
 
 #footer h1::before{
-    content: "04";
+    content: "";
     position: absolute;
     font-size: 3vw;
     font-weight: 100;

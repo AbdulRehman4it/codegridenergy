@@ -630,6 +630,10 @@ video {
   margin: 1.25rem;
 }
 
+.m-0{
+  margin: 0px;
+}
+
 .mx-10{
   margin-left: 2.5rem;
   margin-right: 2.5rem;
@@ -811,6 +815,22 @@ video {
 
 .h-px{
   height: 1px;
+}
+
+.h-\[\]{
+  height: ;
+}
+
+.h-\[80vj\]{
+  height: 80vj;
+}
+
+.h-\[80vh\]{
+  height: 80vh;
+}
+
+.h-\[110vh\]{
+  height: 110vh;
 }
 
 .w-1\/2{

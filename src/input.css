@@ -95,7 +95,7 @@ html,body{
     gap: 1.2vw; 
 }
 #line1-part1 h6{
-    font-family: 'silk serif';
+    font-family: "Poppins", sans-serif;
 }
 #line1-part1 h5{
     width: 5vw;
@@ -136,28 +136,28 @@ html,body{
 
 @-webkit-keyframes anime {
     0%{
-        font-family: "plain light";
+        font-family: "Poppins", sans-serif;
         -webkit-text-stroke: 1px #fff;
         color: #fff;
         font-weight: 500;
         opacity: 1;
     }
     48%{ 
-        font-family: "plain light";
+        font-family: "Poppins", sans-serif;
         -webkit-text-stroke: 1px #fff;
         color: #fff;
         font-weight: 500;
         opacity: 0;
     }
     50%{
-        font-family: "silk serif";
+        font-family: "Poppins", sans-serif;
         -webkit-text-stroke: 1px #fff;
         color: transparent;
         font-weight: 500;
         opacity: 1;
     }
     100%{
-        font-family: "silk serif";
+        font-family: "Poppins", sans-serif;
         -webkit-text-stroke: 1px #fff;
         color: transparent;
         font-weight: 500;
@@ -167,28 +167,28 @@ html,body{
 
 @keyframes anime {
     0%{
-        font-family: "plain light";
+        font-family: "Poppins", sans-serif;
         -webkit-text-stroke: 1px #fff;
         color: #fff;
         font-weight: 500;
         opacity: 1;
     }
     48%{ 
-        font-family: "plain light";
+        font-family: "Poppins", sans-serif;
         -webkit-text-stroke: 1px #fff;
         color: #fff;
         font-weight: 500;
         opacity: 0;
     }
     50%{
-        font-family: "silk serif";
+        font-family: "Poppins", sans-serif;
         -webkit-text-stroke: 1px #fff;
         color: transparent;
         font-weight: 500;
         opacity: 1;
     }
     100%{
-        font-family: "silk serif";
+        font-family: "Poppins", sans-serif;
         -webkit-text-stroke: 1px #fff;
         color: transparent;
         font-weight: 500;
@@ -209,28 +209,28 @@ html,body{
 
 @-webkit-keyframes anime {
     0%{
-        font-family: "plain light";
+        font-family: "Poppins", sans-serif;
         -webkit-text-stroke: 1px #fff;
         color: #fff;
         font-weight: 500;
         opacity: 1;
     }
     48%{ 
-        font-family: "plain light";
+        font-family: "Poppins", sans-serif;
         -webkit-text-stroke: 1px #fff;
         color: #fff;
         font-weight: 500;
         opacity: 0;
     }
     50%{
-        font-family: "silk serif";
+        font-family: "Poppins", sans-serif;
         -webkit-text-stroke: 1px #fff;
         color: transparent;
         font-weight: 500;
         opacity: 1;
     }
     100%{
-        font-family: "silk serif";
+        font-family: "Poppins", sans-serif;
         -webkit-text-stroke: 1px #fff;
         color: transparent;
         font-weight: 500;
@@ -240,28 +240,28 @@ html,body{
 
 @keyframes anime {
     0%{
-        font-family: "plain light";
+        font-family: "Poppins", sans-serif;
         -webkit-text-stroke: 1px #fff;
         color: #fff;
         font-weight: 500;
         opacity: 1;
     }
     48%{ 
-        font-family: "plain light";
+        font-family: "Poppins", sans-serif;
         -webkit-text-stroke: 1px #fff;
         color: #fff;
         font-weight: 500;
         opacity: 0;
     }
     50%{
-        font-family: "silk serif";
+        font-family: "Poppins", sans-serif;
         -webkit-text-stroke: 1px #fff;
         color: transparent;
         font-weight: 500;
         opacity: 1;
     }
     100%{
-        font-family: "silk serif";
+        font-family: "Poppins", sans-serif;
         -webkit-text-stroke: 1px #fff;
         color: transparent;
         font-weight: 500;
@@ -321,7 +321,7 @@ html,body{
         position: absolute;
         font-size: 3vw;
         font-weight: 100;
-        font-family: "silk serif";
+        font-family: "Poppins", sans-serif;
         left: 22%;
         top: 29%;
     }
@@ -414,7 +414,7 @@ html,body{
     position: absolute;
     font-size: 3vw;
     font-weight: 100;
-    font-family: "silk serif";
+    font-family: "Poppins", sans-serif;
     left: -10%;
     top: 8%;
  }
@@ -701,7 +701,7 @@ height: 30%;
     position: absolute;
     font-size: 3vw;
     font-weight: 100;
-    font-family: "silk serif";
+    font-family: "Poppins", sans-serif;
     left: -10%;
     top: 8%;
 }
@@ -824,12 +824,12 @@ height: 30%;
 }
 .page5-elem span{
     font-style: italic ;
-    font-family: "silk serif";
+    font-family: "Poppins", sans-serif;
     color: transparent;
 }
 .page5-elem2 span{
     font-style: italic ;
-    font-family: "silk serif";
+    font-family: "Poppins", sans-serif;
     color: transparent;
 }
 
@@ -847,7 +847,7 @@ height: 30%;
     position: absolute;
     font-size: 3vw;
     font-weight: 100;
-    font-family: "silk serif";
+    font-family: "Poppins", sans-serif;
     left: -10%;
     top: 8%;
 }
@@ -855,11 +855,11 @@ height: 30%;
 
 
 #footer-text h2 {
-    font-family: "silk serif";
+    font-family: "Poppins", sans-serif;
   }
   
   #footer-text h2 span {
-    font-family: "silk serif";
+    font-family: "Poppins", sans-serif;
     opacity: 0;
     -webkit-text-stroke: 1px #fff;
     color: transparent;

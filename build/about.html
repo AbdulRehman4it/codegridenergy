@@ -25,7 +25,7 @@
       background-image: url("../build/assets/img/content-image02-scaled.jpg");
     
       /* Set a specific height */
-      min-height: 500px; 
+      height: 500px; 
     
       /* Create the parallax scrolling effect */
       background-attachment: fixed;
@@ -42,25 +42,27 @@
   <div id="crsr"></div> 
 
   <!-- loader  -->
-  <div id="loader" class="2xl:px-48 xl:px-44 px-6 py-24 xl:py-48">   
+  <div id="loader" class="matrix 2xl:px-48 xl:px-44 px-6 py-24 xl:py-48"> 
+    <div class="absolute z-[9999]">  
     <div class="line">
         <div id="line1-part1">
-            <h5 class="lg:text-5xl text-2xl">00</h5>
-            <h6 class="lg:text-5xl text-2xl font-thin">- 100</h6>
+            <h5 class="lg:text-5xl md:text-2xl text-xl italic font-thin">00</h5>
+            <h6 class="lg:text-5xl md:text-2xl text-xl font-thin italic ">- 100</h6>
         </div>  
-        <h1 class="lg:text-[80px] 2xl:text-9xl md:text-6xl text-3xl font-black uppercase">Your</h1>
+        <h1 class="lg:text-[80px] 2xl:text-9xl md:text-6xl text-3xl font-bold uppercase">Your</h1>
     </div>
     <div class="line">
-        <h1 class="lg:text-[80px] 2xl:text-9xl md:text-6xl  text-3xl font-black uppercase">Web experiences</h1>
+        <h1 class="lg:text-[80px] 2xl:text-9xl md:text-6xl  text-3xl font-bold uppercase">Web experiences</h1>
     </div>
     <div class="line">
-        <h1 class="lg:text-[80px] 2xl:text-9xl md:text-6xl  text-3xl font-black uppercase "> is Loading right </h1>
-        <h2 class="xl:text-[75px] 2xl:text-8xl lg:text-6xl md:text-4xl text-2xl font-black uppercase">Now</h2>
+        <h1 class="lg:text-[80px] 2xl:text-9xl md:text-6xl  text-3xl font-bold uppercase "> is Loading right </h1>
+        <h2 class="xl:text-[75px] 2xl:text-8xl lg:text-6xl md:text-4xl text-2xl font-bold uppercase ">Now</h2>
     </div>
     <div class="text-base 2xl:text-xl text-start pl-32 pt-10 font-semibold">
-        Please wait  <br> a 
+        Please wait <br> a 
        few second
     </div>
+</div>
 </div>
 
 <main>
@@ -83,15 +85,15 @@
                 </button>
                 
                 <div id="nav-part2" class="hidden lg:flex justify-center items-center gap-[3vw]">
-                    <a href="work.html"><h4 class="text-xl font-black">Works</h4></a>
-                    <a href="about.html"><h4 class="text-xl font-black">About</h4></a>
-                    <a href="contact.html"><h4 class="text-xl font-black">Contacts</h4></a>
+                    <a href="work.html"><h4 class="text-xl font-bold">Works</h4></a>
+                    <a href="about.html"><h4 class="text-xl font-bold">About</h4></a>
+                    <a href="contact.html"><h4 class="text-xl font-bold">Contacts</h4></a>
                 </div>
             </div>
             <div id="mobile-menu" class="hidden lg:hidden flex flex-col items-center shadow-md">
-                <a href="work.html" class="py-2 text-lg font-black">Works</a>
-                <a href="about.html" class="py-2 text-lg font-black">About</a>
-                <a href="contact.html" class="py-2 text-lg font-black">Contacts</a>
+                <a href="work.html" class="py-2 text-lg font-bold">Works</a>
+                <a href="about.html" class="py-2 text-lg font-bold">About</a>
+                <a href="contact.html" class="py-2 text-lg font-bold">Contacts</a>
             </div>
         </div>
 
@@ -140,7 +142,7 @@
         <hr class="lg:w-[70%] w-full h-[1px]">
     </div>
         <div class="items-center flex flex-col justify-center px-5 md:px-0">
-            <p class="text-4xl font-medium lg:w-2/5 md:w-1/2 md:text-start text-center">CodeGridzro is a boutique company
+            <p class="md:text-4xl text-2xl font-medium lg:w-2/5 md:w-1/2 md:text-start text-center">CodeGridzro is a boutique company
               focused on designing and developing 
               innovative, high-quality digital solutions.
               More than just a company, we are a space
@@ -150,10 +152,6 @@
             
         </div>
         <div class="flex flex-col justify-center lg:pl-[30%] md:pl-[25%] pt-10 px-5 md:px-0 md:text-start text-center">
-            <!-- <p class="text-lg">We are happy to present our new website and updated <br class="hidden md:block">
-                version of Obys agency. As before we are open for new
-            <br class="hidden md:block">projects worldwide!
-        </p> -->
         <p class="text-lg">
           We’re excited to introduce our new Company along with the updated <br class="hidden md:block">edition of CodeGridZero. As always, we remain open to new projects<br class="hidden md:block"> across the globe!
         </p>
@@ -162,10 +160,7 @@
           feel free to reach out to our manager — <br class="hidden md:block">info@codegridzero.com.
           We’d be delighted to assist you.
         </p>
-        <!-- <p class="text-lg pt-6">Would you like to have an award winning site or unique <br class="hidden md:block">
-            branding style, please say hi to us —
-        <br class="hidden md:block">info@obys.agency. And we will help you with pleasure.
-    </p> -->
+     
             </div>
     </section>
 
@@ -273,7 +268,7 @@
 
             <div class="text-center lg:text-start"> 
                 <p class="text-xl">Our services</p>
-                <ul class="text-4xl pt-5">
+                <ul class="text-4xl pt-5 space-y-2">
                     <li>WebSite Development</li>
                     <li>UI/UX Design</li>
                     <li>SEO</li>
@@ -962,68 +957,94 @@ Meet the key players driving design excellence.
 
 <!-- footer  -->
 
-<div id="footer" class="relative w-full xl:pl-96 lg:pl-64 mt-24 lg:pr-10" data-scroll>
-    <div id="footer-text" class="relative flex items-center md:justify-start justify-between md:ml-10 ml-6">
-        <h1 class="relative uppercase xl:text-8xl lg:text-6xl text-4xl">Let's Create</h1>
-        <h2 class="absolute left-0 uppercase font-medium xl:text-8xl lg:text-6xl text-4xl">Let's Create</h2> &nbsp;&nbsp;&nbsp;
-        <img src="../build/assets/img/arrow.png" alt="">
+<div id="footer" class="relative w-full xl:pl-96 lg:pl-64 mt-24 lg:pr-10 px-5 lg:px-0" data-scroll>
+  <div id="footer-text" class="relative flex items-center md:gap-10 md:justify-start ">
+      <h1 class="relative uppercase xl:text-8xl lg:text-6xl text-4xl">Let's Create</h1>
+      <h2 class="absolute left-0 uppercase font-medium xl:text-8xl lg:text-6xl text-4xl">Let's Create</h2> &nbsp;&nbsp;
+      <img src="../build/assets/img/arrow.png" alt="">
 
-    </div>
-    <div class="underlines"></div>
-    <div id="footer-div" class="flex md:justify-between gap-8 md:gap-0 xl:pr-48 md:px-10 px-4 pt-8 mb-6">
-        <div id="box">
-            <h6 class="md:text-2xl text-lg font-medium mb-5">Socials</h6>
-            <h5 class="button md:text-lg text-sm font-medium">
-                <span class="label-up">Dribble</span>
-                <span class="label-up">Dribble</span>
-            </h5>
-            <h5 class="button md:text-lg text-sm font-medium">
-                <span class="label-up">Behance</span>
-                <span class="label-up">Behance</span>
-            </h5>
-            <h5 class="button md:text-lg text-sm font-medium">
-                <span class="label-up">Instagram</span>
-                <span class="label-up">Instagram</span>
-            </h5>
-            <h5 class="button md:text-lg text-sm font-medium">
-                <span class="label-up">Facebook</span>
-                <span class="label-up">Facebook</span>
-            </h5>
-            <h5 class="button md:text-lg text-sm font-medium">
-                <span class="label-up">Twitter</span>
-                <span class="label-up">Twitter</span>
-            </h5>
-            <h5 class="button md:text-lg text-sm font-medium">
-                <span class="label-up">Youtube</span>
-                <span class="label-up">Youtube</span>
-            </h5>
-        </div>
-        <div id="box">
-        <h6 class="md:text-2xl text-lg font-medium mb-5">Address</h6>
-            <h5 class="md:text-lg text-sm font-medium">Hafiz Street Near Govt. College 
-              <br> Boys New Cvil Line sheikhupura
-            </h5>
-        </div>
-        <div id="box" class="w-1/4">
-            <h6 class="md:text-2xl text-lg font-medium mb-5">Say Hi!</h6>
-            <h5 class="button md:text-lg text-sm font-medium">
-                <span class="label-up underline">info@codegridzero.com</span>
-                <span class="label-up">info@codegridzero.com</span>
-            </h5>
-        </div>
-    </div>
-    <div class="underlinee my-4"></div>
-    
-    <h5 class="text-lg font-medium text-center">Codegridzero.com, ©️2023</h5>
+  </div>
+  <div class="underlines"></div>
+  <div id="footer-div" class="flex md:justify-between gap-8 md:gap-0 xl:pr-48 pt-8 mb-6">
+      <div id="box">
+          <h6 class="md:text-2xl text-lg font-medium mb-5">Socials</h6>
+          <h5 class="button md:text-lg text-sm font-medium">
+              <span class="label-up">Dribble</span>
+              <span class="label-up">Dribble</span>
+          </h5>
+          <h5 class="button md:text-lg text-sm font-medium">
+              <span class="label-up">Behance</span>
+              <span class="label-up">Behance</span>
+          </h5>
+          <h5 class="button md:text-lg text-sm font-medium">
+              <span class="label-up">Instagram</span>
+              <span class="label-up">Instagram</span>
+          </h5>
+          <h5 class="button md:text-lg text-sm font-medium">
+              <span class="label-up">Facebook</span>
+              <span class="label-up">Facebook</span>
+          </h5>
+          <h5 class="button md:text-lg text-sm font-medium">
+              <span class="label-up">Twitter</span>
+              <span class="label-up">Twitter</span>
+          </h5>
+          <h5 class="button md:text-lg text-sm font-medium">
+              <span class="label-up">Youtube</span>
+              <span class="label-up">Youtube</span>
+          </h5>
+      </div>
+      <div id="box">
+      <h6 class="md:text-2xl text-lg font-medium mb-5">Address</h6>
+          <h5 class="md:text-lg text-sm font-medium">Hafiz Street Near Govt. College 
+              <br> Boys New Cvil Line sheikhupura .
+          </h5>
+      </div>
+      <div id="box" class="w-1/3">
+          <h6 class="md:text-2xl text-lg font-medium mb-5">Say Hi!</h6>
+          <h5 class="button md:text-lg text-sm font-medium">
+              <span class="label-up underline">info@codegridzero.com</span>
+              <span class="label-up">info@codegridzero.com</span>
+          </h5>
+      </div>
+  </div>
+  <div class="underlinee my-4"></div>
+  
+  <h5 class="text-lg font-medium text-center">Codegridzero, ©️2023</h5>
 
 </div>
-
 <br>
 <br>
 
 
 </div>
 </main>
+
+
+ <!-- Matrix animation js start -->
+ <script>
+  document.addEventListener("DOMContentLoaded", () => {
+    const matrixContainer = document.querySelector('.matrix');
+    const columns = Math.floor(window.innerWidth / 20);
+    const rows = Math.floor(window.innerHeight / 20);
+    for (let i = 0; i < columns; i++) {
+      for (let j = 0; j < rows; j++) {
+        const span = document.createElement('span');
+        span.style.left = `${i * 20}px`;
+        span.style.top = `${j * 20}px`;
+        span.style.animationDelay = `${Math.random() * 5}s`;
+        span.textContent = generateRandomCharacter();
+        matrixContainer.appendChild(span);
+      }
+    }
+    function generateRandomCharacter() {
+      const characters = 'ABCDEF0123456789*';
+      return characters.charAt(Math.floor(Math.random() * characters.length));
+    }
+  });
+
+</script>
+<!-- Matrix animation js end -->
+
 
 
 

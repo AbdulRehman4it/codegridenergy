@@ -25,11 +25,12 @@
   <div id="crsr"></div> 
 
   <!-- loader  -->
-  <div id="loader" class="2xl:px-48 xl:px-44 px-6 py-24 xl:py-48">   
+  <div id="loader" class="matrix 2xl:px-48 xl:px-44 px-6 py-24 xl:py-48"> 
+    <div class="absolute z-[9999]">  
     <div class="line">
         <div id="line1-part1">
             <h5 class="lg:text-5xl md:text-2xl text-xl italic font-thin">00</h5>
-            <h6 class="lg:text-5xl md:text-2xl text-xl italic font-thin">- 100</h6>
+            <h6 class="lg:text-5xl md:text-2xl text-xl font-thin italic ">- 100</h6>
         </div>  
         <h1 class="lg:text-[80px] 2xl:text-9xl md:text-6xl text-3xl font-bold uppercase">Your</h1>
     </div>
@@ -38,12 +39,13 @@
     </div>
     <div class="line">
         <h1 class="lg:text-[80px] 2xl:text-9xl md:text-6xl  text-3xl font-bold uppercase "> is Loading right </h1>
-        <h2 class="xl:text-[75px] 2xl:text-8xl lg:text-6xl md:text-4xl text-2xl font-bold uppercase">Now</h2>
+        <h2 class="xl:text-[75px] 2xl:text-8xl lg:text-6xl md:text-4xl text-2xl font-bold uppercase ">Now</h2>
     </div>
     <div class="text-base 2xl:text-xl text-start pl-32 pt-10 font-semibold">
-        Please wait  <br> a 
+        Please wait <br> a 
        few second
     </div>
+</div>
 </div>
 
 <main>
@@ -688,7 +690,30 @@
 </main>
 
 
+ <!-- Matrix animation js start -->
+ <script>
+    document.addEventListener("DOMContentLoaded", () => {
+      const matrixContainer = document.querySelector('.matrix');
+      const columns = Math.floor(window.innerWidth / 20);
+      const rows = Math.floor(window.innerHeight / 20);
+      for (let i = 0; i < columns; i++) {
+        for (let j = 0; j < rows; j++) {
+          const span = document.createElement('span');
+          span.style.left = `${i * 20}px`;
+          span.style.top = `${j * 20}px`;
+          span.style.animationDelay = `${Math.random() * 5}s`;
+          span.textContent = generateRandomCharacter();
+          matrixContainer.appendChild(span);
+        }
+      }
+      function generateRandomCharacter() {
+        const characters = 'ABCDEF0123456789*';
+        return characters.charAt(Math.floor(Math.random() * characters.length));
+      }
+    });
 
+  </script>
+  <!-- Matrix animation js end -->
 
 <!-- navbar  -->
 

@@ -761,6 +761,10 @@ video {
   display: grid;
 }
 
+.contents{
+  display: contents;
+}
+
 .hidden{
   display: none;
 }
@@ -797,8 +801,8 @@ video {
   height: 1px;
 }
 
-.h-\[23vw\]{
-  height: 23vw;
+.h-\[32vw\]{
+  height: 32vw;
 }
 
 .h-\[50vw\]{
@@ -819,14 +823,6 @@ video {
 
 .h-px{
   height: 1px;
-}
-
-.h-\[30vw\]{
-  height: 30vw;
-}
-
-.h-\[32vw\]{
-  height: 32vw;
 }
 
 .w-1\/2{
@@ -865,8 +861,8 @@ video {
   width: 1.5rem;
 }
 
-.w-\[23vw\]{
-  width: 23vw;
+.w-\[32vw\]{
+  width: 32vw;
 }
 
 .w-\[60\%\]{
@@ -875,18 +871,6 @@ video {
 
 .w-full{
   width: 100%;
-}
-
-.w-\[vw\]{
-  width: vw;
-}
-
-.w-\[30vw\]{
-  width: 30vw;
-}
-
-.w-\[32vw\]{
-  width: 32vw;
 }
 
 .max-w-4xl{
@@ -1034,6 +1018,16 @@ video {
 
 .bg-center{
   background-position: center;
+}
+
+.object-contain{
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+
+.object-cover{
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 .p-2{
@@ -2310,10 +2304,6 @@ html,body{
     width: 70%;
   }
 
-  .md\:w-\[23vw\]{
-    width: 23vw;
-  }
-
   .md\:grid-cols-1{
     grid-template-columns: repeat(1, minmax(0, 1fr));
   }
@@ -2505,6 +2495,10 @@ html,body{
     height: 10rem;
   }
 
+  .lg\:h-\[23vw\]{
+    height: 23vw;
+  }
+
   .lg\:h-\[24vw\]{
     height: 24vw;
   }
@@ -2519,10 +2513,6 @@ html,body{
 
   .lg\:h-\[40vw\]{
     height: 40vw;
-  }
-
-  .lg\:h-\[23vw\]{
-    height: 23vw;
   }
 
   .lg\:w-1\/2{
@@ -2553,6 +2543,10 @@ html,body{
     width: 22vw;
   }
 
+  .lg\:w-\[23vw\]{
+    width: 23vw;
+  }
+
   .lg\:w-\[27vw\]{
     width: 27vw;
   }
@@ -2579,10 +2573,6 @@ html,body{
 
   .lg\:w-\[73vw\]{
     width: 73vw;
-  }
-
-  .lg\:w-\[23vw\]{
-    width: 23vw;
   }
 
   .lg\:flex-row{
